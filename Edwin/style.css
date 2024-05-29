@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     background: #f4f4f4;
 }
 
-/* Layout Styles */
 header {
     background: linear-gradient(to right, #333, #555);
     color: #fff;
@@ -58,7 +57,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Flexbox Layout */
 #services ul {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +78,6 @@ section {
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Grid Layout */
 #home {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,7 +91,6 @@ section {
     border-radius: 6px;
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -130,7 +126,6 @@ form button:hover {
     background: #555;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -146,7 +141,6 @@ form button:hover {
     }
 }
 
-/* Typography */
 h1, h2 {
     font-family: 'Arial Black', Gadget, sans-serif;
     margin-bottom: 1rem;
@@ -160,7 +154,6 @@ ul {
     margin-bottom: 1rem;
 }
 
-/* Box Model Properties */
 #home p {
     padding: 1rem;
     border: 1px solid #ddd;
@@ -168,7 +161,6 @@ ul {
     margin-bottom: 1rem;
 }
 
-/* Pseudo-classes and Pseudo-elements */
 nav ul li a::before {
     content: "→ ";
     color: #fff;
@@ -183,7 +175,6 @@ form input::placeholder, form textarea::placeholder {
     color: #aaa;
 }
 
-/* CSS Animations and Transitions */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -201,7 +192,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* Additional Styling */
 body {
     background: linear-gradient(to bottom, #e0e0e0, #fff);
 }
