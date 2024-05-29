@@ -1,0 +1,247 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Layout Styles */
+header {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 2rem;
+    background: #fff;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Layout */
+#services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#services li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services li:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Layout */
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+#home img {
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #home {
+        grid-template-columns: 1fr;
+    }
+
+    #services li {
+        flex: 1 1 100%;
+    }
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+/* Box Model Properties */
+#home p {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+/* Pseudo-classes and Pseudo-elements */
+nav ul li a::before {
+    content: "→ ";
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: translateX(5px);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #aaa;
+}
+
+/* CSS Animations and Transitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Additional Styling */
+body {
+    background: linear-gradient(to bottom, #e0e0e0, #fff);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#home p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#services li {
+    background: linear-gradient(to bottom, #fff, #f0f0f0);
+}
+
+
+#personal-info h2 {
+  color: #f8f3f3;
+  font-size: 24px;
+}
+
+#personal-info ul li {
+  color: #f9f4f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#personal-info ul li strong {
+  font-weight: bold;
+}
+
+#personal-info ul li a {
+  color: #f4f2f2;
+  text-decoration: none;
+}
+
+#personal-info ul li a:hover {
+  text-decoration: underline;
+}
